@@ -15,7 +15,7 @@ export default async function GaleriPage() {
     return (
       <div className="py-20 text-center text-ink/50">
         <p>Belum ada dokumentasi.</p>
-        <Link href="/upload" className="mt-3 inline-block text-brass underline">
+        <Link href="/upload" className="mt-3 inline-block text-teal underline">
           Upload yang pertama
         </Link>
       </div>
@@ -30,7 +30,7 @@ export default async function GaleriPage() {
           <Link
             key={item.id}
             href={`/galeri/${item.id}`}
-            className="group overflow-hidden rounded-xl border border-ink/10 bg-white"
+            className="group overflow-hidden rounded-2xl border border-hairline bg-surface shadow-sm transition hover:shadow-md"
           >
             <div className="relative aspect-[4/3] overflow-hidden bg-ink/5">
               <Image

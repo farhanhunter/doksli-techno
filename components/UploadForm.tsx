@@ -131,11 +131,8 @@ export default function UploadForm() {
         <Field label="Kategori">
           <select name="kategori" className={input} defaultValue="">
             <option value="">— pilih —</option>
-            <option>Seremonial</option>
-            <option>Workshop</option>
-            <option>Lomba</option>
-            <option>Hiburan</option>
-            <option>Lainnya</option>
+            <option>Doksli</option>
+            <option>Kehilangan</option>
           </select>
         </Field>
       </div>
@@ -151,7 +148,7 @@ export default function UploadForm() {
           capture="environment"
           onChange={onPickFile}
           required
-          className="block w-full text-sm file:mr-3 file:rounded-lg file:border-0 file:bg-ink file:px-4 file:py-2 file:text-sm file:text-paper"
+          className="block w-full text-sm file:mr-3 file:rounded-lg file:border-0 file:bg-navy file:px-4 file:py-2 file:text-sm file:text-white"
         />
       </Field>
 
@@ -160,11 +157,11 @@ export default function UploadForm() {
         <img
           src={preview}
           alt="Pratinjau"
-          className="max-h-64 rounded-lg border border-ink/10 object-contain"
+          className="max-h-64 rounded-lg border border-hairline object-contain"
         />
       )}
 
-      <Field label="Kode Panitia" required>
+      <Field label="Secret Code" required>
         <input type="password" name="kodePanitia" required className={input} />
       </Field>
 
@@ -177,7 +174,7 @@ export default function UploadForm() {
       <button
         type="submit"
         disabled={busy}
-        className="w-full rounded-lg bg-ink px-5 py-3 font-medium text-paper disabled:opacity-50"
+        className="w-full rounded-lg bg-navy px-5 py-3 font-medium text-white hover:bg-navyDeep disabled:opacity-50"
       >
         {label[status]}
       </button>
@@ -186,7 +183,7 @@ export default function UploadForm() {
 }
 
 const input =
-  "w-full rounded-lg border border-ink/20 bg-white px-3 py-2 text-sm outline-none focus:border-brass";
+  "w-full rounded-lg border border-hairline bg-white px-3 py-2 text-sm outline-none focus:border-teal";
 
 function Field({
   label,
@@ -201,7 +198,7 @@ function Field({
     <label className="block">
       <span className="mb-1 block text-sm font-medium">
         {label}
-        {required && <span className="text-brass"> *</span>}
+        {required && <span className="text-teal"> *</span>}
       </span>
       {children}
     </label>

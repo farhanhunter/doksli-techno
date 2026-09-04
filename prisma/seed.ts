@@ -11,7 +11,7 @@ async function main() {
         lokasi: "Aula Utama",
         tanggal: new Date("2026-09-01"),
         uploader: "Panitia",
-        kategori: "Seremonial",
+        kategori: "Doksli",
         imageUrl:
           "https://res.cloudinary.com/demo/image/upload/w_1200/sample.jpg",
         publicId: "sample",
@@ -19,12 +19,13 @@ async function main() {
         height: 800,
       },
       {
-        namaKegiatan: "Workshop Web Development",
-        deskripsi: "Sesi hands-on membangun aplikasi web modern.",
-        lokasi: "Lab Komputer 2",
+        namaKegiatan: "Laporan Barang Hilang",
+        deskripsi:
+          "Dompet coklat ditemukan tercecer di area Aula Utama, silakan hubungi panitia jika merasa kehilangan.",
+        lokasi: "Aula Utama",
         tanggal: new Date("2026-09-02"),
         uploader: "Divisi Acara",
-        kategori: "Workshop",
+        kategori: "Kehilangan",
         imageUrl:
           "https://res.cloudinary.com/demo/image/upload/w_1200/sample.jpg",
         publicId: "sample",

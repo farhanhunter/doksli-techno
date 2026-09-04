@@ -20,7 +20,7 @@ export default async function DetailPage({
 
   return (
     <article>
-      <Link href="/galeri" className="text-sm text-ink/50 hover:text-brass">
+      <Link href="/galeri" className="text-sm text-ink/50 hover:text-teal">
         &larr; Kembali ke galeri
       </Link>
 
@@ -36,6 +36,12 @@ export default async function DetailPage({
       </div>
 
       <h1 className="mt-6 text-2xl font-bold">{item.namaKegiatan}</h1>
+
+      {item.kategori && (
+        <span className="mt-3 inline-block rounded-full bg-tealSoft px-3 py-1 text-xs font-medium text-teal">
+          {item.kategori}
+        </span>
+      )}
 
       <dl className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-ink/60">
         <div>
